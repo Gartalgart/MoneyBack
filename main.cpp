@@ -10,7 +10,7 @@ int main()
 
 	do
 	{
-		printf("Indique le prix d'un objet:\n");
+		printf("Indique le prix d'un objet:");
 		scanf_s("%d", &prix);
 		while (getchar() != '\n');
 		printf("%d\n", prix);
