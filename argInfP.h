@@ -1,4 +1,4 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void argentDonnerInfPrix(int* argentDonner, int* prix);
+void argentDonnerInfPrix(int* agiveMoney, int* price);
