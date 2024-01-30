@@ -1,30 +1,23 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include "argSupP.h"
-#include "argInfP.h"
 #include "init.h"
+#include "givMoSupP.h"
+#include "givMoInfP.h"
 
 int main()
 {
 	int price; 
 	int giveMoney; 
-	int result, 
-	int again;
-	again = 1;
+	int again = 1;
 	while (again == 1)
 	{
-		init(&giveMoney, &price)
-		if(init == 1 )// Continuer si variable entrer est un entier.
-		{
-			if (giveMoney > price)
-				argentDonnerSupPrix(&giveMoney, &price);
-			else if (giveMoney < price)
-				argentDonnerInfPrix(&giveMoney, &price);
-			else
-				printf("Vous avez donner la bonne somme d'argent,  merci beaucoup !\n\n");
-		}
+		init(&giveMoney, &price);
+		if (giveMoney > price)
+			giveMoneySupPrice(&giveMoney, &price);
+		else if (giveMoney < price)
+			giveMoneyInfPrice(&giveMoney, &price);
 		else
+		{
 		printf("Tu dois entrer un nombre entier.\n");
+		}
 		printf("Voullez-vous continuer ? Tapez sur 1 pour oui.\n");
 		scanf("%d", &again);
 		while (getchar() != '\n');

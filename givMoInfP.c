@@ -1,9 +1,7 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include "argInfP.h"
-include "endMessage"
+#include "givMoInfP.h"
+#include "endMessage2.h"
 
-void argentDonnerInfPrix(int* giveMoney, int* price);
+void giveMoneyInfPrice(int *giveMoney, int *price)
 {
 	int result = *price - *giveMoney;
 	int bill20; 
@@ -21,5 +19,5 @@ void argentDonnerInfPrix(int* giveMoney, int* price);
 	result %= 2;
 	coin1 = result / 1;
 	result %= 1;
-	endMessage(&bill20, &bill10, &bill5, &coin2, &coin1);
+	endMessage2(&bill20, &bill10, &bill5, &coin2, &coin1);
 }

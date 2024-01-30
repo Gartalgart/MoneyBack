@@ -1,9 +1,7 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include "argSupP.h"
+#include "givMoSupP.h"
 #include "endMessage.h"
 
-void argentDonnerSupPrix(int* giveMoney, int* price)
+void giveMoneySupPrice(int *giveMoney, int *price)
 {
 	int result = *giveMoney - *price;
 	int bill20;
@@ -23,4 +21,3 @@ void argentDonnerSupPrix(int* giveMoney, int* price)
 	result %= 1;
 	endMessage(&bill20, &bill10, &bill5, &coin2, &coin1);
 }
-
