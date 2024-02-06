@@ -16,7 +16,7 @@ int main()
 			giveMoneyInfPrice(&giveMoney, &price);
 		else
 		{
-		printf("Tu dois entrer un nombre entier.\n");
+			printf("Tu dois entrer un nombre entier.\n");
 		}
 		printf("Voullez-vous continuer ? Tapez sur 1 pour oui.\n");
 		scanf("%d", &again);
